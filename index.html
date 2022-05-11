@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="./main.js" defer></script>
+		<title>Clamp Builder</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Clamp Builder</h1>
+			</header>
+
+			<form id="clamp-form">
+				<fieldset>
+					<label for="min-font">Minimum Font Size (px)</label>
+					<input id="min-font" type="number" name="minFont" />
+				</fieldset>
+
+				<fieldset>
+					<label for="min-font">Maximum Font Size (px)</label>
+					<input id="min-font" type="number" name="maxFont" />
+				</fieldset>
+
+				<fieldset>
+					<label for="min-font">Minimum Width (px)</label>
+					<input id="min-font" type="number" name="minWidth" />
+				</fieldset>
+
+				<fieldset>
+					<label for="min-font">Minimum Width (px)</label>
+					<input id="min-font" type="number" name="maxWidth" />
+				</fieldset>
+
+				<button type="submit">Build Clamp</button>
+			</form>
+
+			<output
+				form="clamp-form"
+				name="result"
+				for="min-font max-width min-font max-width"
+			>
+				No clamp built yet
+			</output>
+		</main>
+	</body>
+</html>
